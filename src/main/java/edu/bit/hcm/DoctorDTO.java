@@ -33,9 +33,34 @@ public class DoctorDTO {
 
 	private String telephone;
 
+	private SpecializationDTO specializationDTO;
+
 	public DoctorDTO() {
 		// TODO Auto-generated constructor stub
 	}
+	
+
+	public DoctorDTO(int doctorId, String addressL1, String addressL2, String addressL3, Date dob, String email,
+			String firstName, String lastName, String mobile, String nic, String regNo, int specializationCode,
+			String telephone, SpecializationDTO specializationDTO) {
+		super();
+		this.doctorId = doctorId;
+		this.addressL1 = addressL1;
+		this.addressL2 = addressL2;
+		this.addressL3 = addressL3;
+		this.dob = dob;
+		this.email = email;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobile = mobile;
+		this.nic = nic;
+		this.regNo = regNo;
+		this.specializationCode = specializationCode;
+		this.telephone = telephone;
+		this.specializationDTO = specializationDTO;
+	}
+
+
 
 	public int getDoctorId() {
 		return doctorId;
@@ -139,6 +164,14 @@ public class DoctorDTO {
 
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
+	}
+
+	public SpecializationDTO getSpecializationDTO() {
+		return specializationDTO;
+	}
+
+	public void setSpecializationDTO(SpecializationDTO specializationDTO) {
+		this.specializationDTO = specializationDTO;
 	}
 
 }
