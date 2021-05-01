@@ -2,6 +2,9 @@ package edu.bit.hcm;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ChannelingDTO {
 	private int channelingId;
 
@@ -16,6 +19,8 @@ public class ChannelingDTO {
 	private String reason;
 
 	private String time;
+
+	private PatientDTO patientDTO;
 
 	public ChannelingDTO() {
 		// TODO Auto-generated constructor stub
@@ -77,4 +82,11 @@ public class ChannelingDTO {
 		this.time = time;
 	}
 
+	public PatientDTO getPatientDTO() {
+		return patientDTO;
+	}
+
+	public void setPatientDTO(PatientDTO patientDTO) {
+		this.patientDTO = patientDTO;
+	}
 }
