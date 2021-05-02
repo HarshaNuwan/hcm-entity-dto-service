@@ -20,6 +20,26 @@ public class DiagnosisDTO {
 
 	private String reports;
 
+	private boolean prescriptionStatus;
+
+	public boolean isPrescriptionStatus() {
+		return prescriptionStatus;
+	}
+
+	public void setPrescriptionStatus(boolean prescriptionStatus) {
+		this.prescriptionStatus = prescriptionStatus;
+	}
+
+	public boolean isReportStatus() {
+		return reportStatus;
+	}
+
+	public void setReportStatus(boolean reportStatus) {
+		this.reportStatus = reportStatus;
+	}
+
+	private boolean reportStatus;
+
 	public DiagnosisDTO() {
 		// TODO Auto-generated constructor stub
 	}
