@@ -21,7 +21,11 @@ public class DiagnosisDTO {
 	private String reports;
 
 	private boolean prescriptionStatus;
-
+	
+	private boolean reportStatus;
+	
+	private PatientDTO patientDTO;
+	
 	public boolean isPrescriptionStatus() {
 		return prescriptionStatus;
 	}
@@ -37,8 +41,6 @@ public class DiagnosisDTO {
 	public void setReportStatus(boolean reportStatus) {
 		this.reportStatus = reportStatus;
 	}
-
-	private boolean reportStatus;
 
 	public DiagnosisDTO() {
 		// TODO Auto-generated constructor stub
@@ -106,6 +108,14 @@ public class DiagnosisDTO {
 
 	public void setReports(String reports) {
 		this.reports = reports;
+	}
+	
+	public PatientDTO getPatientDTO() {
+		return patientDTO;
+	}
+	
+	public void setPatientDTO(PatientDTO patientDTO) {
+		this.patientDTO = patientDTO;
 	}
 
 }
